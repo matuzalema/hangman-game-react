@@ -1,3 +1,22 @@
-.input-enter-letter {
-    caret-color: transparent;
+.choiceLetters {
+    .header {
+        text-transform: uppercase;
+        color: #53555D;
+        font-size: 22px;
+        margin-top: 20px;
+    }   
+        .input-enter-letter {
+            caret-color: transparent;
+            color: #4D71FA;
+            background-color: transparent;
+            border: none;
+            font-size: 60px;
+            letter-spacing: 22px;
+            text-transform: uppercase;
+            font-weight: 700;
+            &:focus {
+                outline: none;
+            }
+        }
+    
 }

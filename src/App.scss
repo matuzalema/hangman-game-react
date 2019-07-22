@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+.App {
+    background-color: #3B4263;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 90%;
+        height: 80vh;
+        background:#F5F5F5;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-top: 300px solid transparent;
+            border-left: 300px solid #4D71FA;
+            border-bottom: 300px solid #4D71FA;
+            border-left: 300px solid transparent;
+            bottom: 0;
+            right: 0;
+        }
+         
+        .hangman-letters-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+       
+       
+    }
+}
+}
