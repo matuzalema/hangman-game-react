@@ -3,7 +3,7 @@ import React from 'react';
 import './App.scss';
 import ChoiceLetters from './components/ChoiceLetters';
 import { connect } from 'react-redux';
-import RandomWord from './components/RandomWord';
+// import RandomWord from './components/RandomWord';
 
 
 class App extends React.Component {
@@ -21,7 +21,7 @@ class App extends React.Component {
               <h1>hangman</h1>
               <ChoiceLetters />
             </div>
-            <RandomWord words={this.props.words}/>
+            {/* <RandomWord words={this.props.words}/> */}
           </div>
         </div>
       );

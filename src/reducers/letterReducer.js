@@ -1,14 +1,15 @@
 import {GET_LETTER} from "../actions/lettersActions";
 
-// 
-// export default function (action) {
-//     switch (action.type) {
-//         case GET_LETTER:
-//             let newArray = state.
-            
-//             break;
+const initialState = {
+    choiceLetterssss: []
+}
+
+export default function (state = initialState, action) {
+    switch (action.type) {
+        case GET_LETTER:
+            return Object.assign({}, state, {choiceLetters:["g", "q"]});
     
-//         default:
-//             break;
-//     }
-// }
+        default:
+            break;
+    }
+}

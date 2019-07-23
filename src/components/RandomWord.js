@@ -9,26 +9,13 @@ class RandomWord extends React.Component{
         }
     }
 
-    renderLetters(){
-            
-            //     for(let i=0; i<12; i++){
-            //         if (12 > this.state.wordSplit.length) {
-            //             return <li className="emptyItem">dd</li>
-            //         } else {
-            //             this.state.wordSplit.map(letter => {
-            //                 return <li className="letterItem">{letter}</li>
-            //             })
-            //         }
-            // }
-               
-    }
+
      render(){
          return (
              <div className="choiceLetters">
                  <ul className="letterList">
-                     {this.renderLetters()}
                      {this.state.wordSplit.map(letter => {
-                         return <li className="letterItem">{letter}</li>
+                         return <li className={this.props.addClassMatchLetter ? "matchLetter": "noMatchLetter"}>{letter}</li>
                      })}
                  </ul>
              </div>
@@ -36,7 +23,4 @@ class RandomWord extends React.Component{
      }
 }
 
-// const mapStateToProps = state => {
-
-// }
 export default RandomWord;
